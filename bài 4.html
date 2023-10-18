@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 4</title>
+</head>
+<body>
+    <script>
+      let number=prompt("mời nhập chuỗi số");
+      let arrNumber=number.split("")
+      let count=0
+      for (let j = 0; j < arrNumber.length; j++) {
+        for (let i = 0; i < arrNumber.length; i++) {
+            if (arrNumber[i]>arrNumber[i+1]) {
+            count=arrNumber[i];
+            arrNumber[i]=arrNumber[i+1]
+            arrNumber[i+1]=count
+        }
+            
+        }
+      }
+      console.log(arrNumber);
+    </script>
+</body>
+</html>
